@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sqlite3.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    
+    NSInteger hayUsuario;
+    
+}
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) NSString *databasePath;
+@property (nonatomic) sqlite3 *sainetDB;
+@property (strong,nonatomic) NSString *token;
 
 @end
 

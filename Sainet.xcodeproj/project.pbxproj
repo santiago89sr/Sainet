@@ -7,15 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBB31FFD92BDC6F57E8DD604 /* libPods-Sainet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF07AF119D770704CADC304 /* libPods-Sainet.a */; };
 		DE2F67F21DC4F8910058FA35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F67F11DC4F8910058FA35 /* main.m */; };
 		DE2F67F51DC4F8910058FA35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F67F41DC4F8910058FA35 /* AppDelegate.m */; };
 		DE2F67F81DC4F8910058FA35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F67F71DC4F8910058FA35 /* ViewController.m */; };
 		DE2F67FB1DC4F8910058FA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2F67F91DC4F8910058FA35 /* Main.storyboard */; };
 		DE2F67FD1DC4F8910058FA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2F67FC1DC4F8910058FA35 /* Assets.xcassets */; };
 		DE2F68001DC4F8910058FA35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2F67FE1DC4F8910058FA35 /* LaunchScreen.storyboard */; };
+		DE2F68091DC51C330058FA35 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F68081DC51C330058FA35 /* MapViewController.m */; };
+		DE2F680C1DC51CC90058FA35 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2F680B1DC51CC90058FA35 /* MapKit.framework */; };
+		DE2F680F1DC526260058FA35 /* Lugar.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F680E1DC526260058FA35 /* Lugar.m */; };
+		DE9A1E101DC6754800B783A1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9A1E0F1DC6754800B783A1 /* SWRevealViewController.m */; };
+		DE9A1E131DC677EB00B783A1 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9A1E121DC677EB00B783A1 /* MenuViewController.m */; };
+		DE9A1E161DC679FA00B783A1 /* NewPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9A1E151DC679FA00B783A1 /* NewPlaceViewController.m */; };
+		DE9A1E191DC6874100B783A1 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9A1E181DC6874100B783A1 /* LogInViewController.m */; };
+		DE9A1E1B1DC69F9B00B783A1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9A1E1A1DC69F9B00B783A1 /* CoreLocation.framework */; };
+		DE9A1E1E1DC6CF9F00B783A1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9A1E1D1DC6CF9F00B783A1 /* Reachability.m */; };
+		DE9A1E211DC6CFCC00B783A1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9A1E201DC6CFCC00B783A1 /* MBProgressHUD.m */; };
+		DE9A1E251DC6FCF300B783A1 /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9A1E241DC6FCF300B783A1 /* Usuario.m */; };
+		DE9A1E281DC7095000B783A1 /* ViewPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9A1E271DC7095000B783A1 /* ViewPlaceViewController.m */; };
+		DECD68AD1DC5376600708E37 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DECD68AC1DC5376600708E37 /* ListTableViewCell.m */; };
+		DECD68AF1DC53F3800708E37 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DECD68AE1DC53F3800708E37 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DF07AF119D770704CADC304 /* libPods-Sainet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sainet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9386961E1AF8E965DD411914 /* Pods-Sainet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sainet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sainet/Pods-Sainet.debug.xcconfig"; sourceTree = "<group>"; };
+		C23C2A8F2FD6D0BC2DFEB017 /* Pods-Sainet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sainet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sainet/Pods-Sainet.release.xcconfig"; sourceTree = "<group>"; };
 		DE2F67ED1DC4F8910058FA35 /* Sainet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sainet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2F67F11DC4F8910058FA35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE2F67F31DC4F8910058FA35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +44,32 @@
 		DE2F67FC1DC4F8910058FA35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE2F67FF1DC4F8910058FA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE2F68011DC4F8910058FA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE2F68071DC51C330058FA35 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		DE2F68081DC51C330058FA35 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		DE2F680B1DC51CC90058FA35 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DE2F680D1DC526260058FA35 /* Lugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lugar.h; sourceTree = "<group>"; };
+		DE2F680E1DC526260058FA35 /* Lugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lugar.m; sourceTree = "<group>"; };
+		DE9A1E0E1DC6754800B783A1 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		DE9A1E0F1DC6754800B783A1 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		DE9A1E111DC677EB00B783A1 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		DE9A1E121DC677EB00B783A1 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		DE9A1E141DC679FA00B783A1 /* NewPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPlaceViewController.h; sourceTree = "<group>"; };
+		DE9A1E151DC679FA00B783A1 /* NewPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPlaceViewController.m; sourceTree = "<group>"; };
+		DE9A1E171DC6874100B783A1 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		DE9A1E181DC6874100B783A1 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		DE9A1E1A1DC69F9B00B783A1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DE9A1E1C1DC6CF9F00B783A1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		DE9A1E1D1DC6CF9F00B783A1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		DE9A1E1F1DC6CFCC00B783A1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		DE9A1E201DC6CFCC00B783A1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		DE9A1E221DC6D22100B783A1 /* Sainet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sainet.entitlements; sourceTree = "<group>"; };
+		DE9A1E231DC6FCF300B783A1 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
+		DE9A1E241DC6FCF300B783A1 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuario.m; sourceTree = "<group>"; };
+		DE9A1E261DC7095000B783A1 /* ViewPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPlaceViewController.h; sourceTree = "<group>"; };
+		DE9A1E271DC7095000B783A1 /* ViewPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewPlaceViewController.m; sourceTree = "<group>"; };
+		DECD68AB1DC5376600708E37 /* ListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
+		DECD68AC1DC5376600708E37 /* ListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
+		DECD68AE1DC53F3800708E37 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +77,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9A1E1B1DC69F9B00B783A1 /* CoreLocation.framework in Frameworks */,
+				DECD68AF1DC53F3800708E37 /* libsqlite3.tbd in Frameworks */,
+				DE2F680C1DC51CC90058FA35 /* MapKit.framework in Frameworks */,
+				CBB31FFD92BDC6F57E8DD604 /* libPods-Sainet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58605BBE3AE4ACB33BAF3D7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9386961E1AF8E965DD411914 /* Pods-Sainet.debug.xcconfig */,
+				C23C2A8F2FD6D0BC2DFEB017 /* Pods-Sainet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DE2F67E41DC4F88F0058FA35 = {
 			isa = PBXGroup;
 			children = (
 				DE2F67EF1DC4F8910058FA35 /* Sainet */,
 				DE2F67EE1DC4F8910058FA35 /* Products */,
+				DE2F680A1DC51CC90058FA35 /* Frameworks */,
+				58605BBE3AE4ACB33BAF3D7D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +117,7 @@
 		DE2F67EF1DC4F8910058FA35 /* Sainet */ = {
 			isa = PBXGroup;
 			children = (
+				DE9A1E221DC6D22100B783A1 /* Sainet.entitlements */,
 				DE2F67F31DC4F8910058FA35 /* AppDelegate.h */,
 				DE2F67F41DC4F8910058FA35 /* AppDelegate.m */,
 				DE2F67F61DC4F8910058FA35 /* ViewController.h */,
@@ -67,6 +127,28 @@
 				DE2F67FE1DC4F8910058FA35 /* LaunchScreen.storyboard */,
 				DE2F68011DC4F8910058FA35 /* Info.plist */,
 				DE2F67F01DC4F8910058FA35 /* Supporting Files */,
+				DE2F68071DC51C330058FA35 /* MapViewController.h */,
+				DE2F68081DC51C330058FA35 /* MapViewController.m */,
+				DE9A1E0E1DC6754800B783A1 /* SWRevealViewController.h */,
+				DE9A1E0F1DC6754800B783A1 /* SWRevealViewController.m */,
+				DE2F680D1DC526260058FA35 /* Lugar.h */,
+				DE2F680E1DC526260058FA35 /* Lugar.m */,
+				DE9A1E1F1DC6CFCC00B783A1 /* MBProgressHUD.h */,
+				DE9A1E201DC6CFCC00B783A1 /* MBProgressHUD.m */,
+				DE9A1E1C1DC6CF9F00B783A1 /* Reachability.h */,
+				DE9A1E1D1DC6CF9F00B783A1 /* Reachability.m */,
+				DECD68AB1DC5376600708E37 /* ListTableViewCell.h */,
+				DECD68AC1DC5376600708E37 /* ListTableViewCell.m */,
+				DE9A1E111DC677EB00B783A1 /* MenuViewController.h */,
+				DE9A1E121DC677EB00B783A1 /* MenuViewController.m */,
+				DE9A1E141DC679FA00B783A1 /* NewPlaceViewController.h */,
+				DE9A1E151DC679FA00B783A1 /* NewPlaceViewController.m */,
+				DE9A1E171DC6874100B783A1 /* LogInViewController.h */,
+				DE9A1E181DC6874100B783A1 /* LogInViewController.m */,
+				DE9A1E231DC6FCF300B783A1 /* Usuario.h */,
+				DE9A1E241DC6FCF300B783A1 /* Usuario.m */,
+				DE9A1E261DC7095000B783A1 /* ViewPlaceViewController.h */,
+				DE9A1E271DC7095000B783A1 /* ViewPlaceViewController.m */,
 			);
 			path = Sainet;
 			sourceTree = "<group>";
@@ -79,6 +161,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DE2F680A1DC51CC90058FA35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE9A1E1A1DC69F9B00B783A1 /* CoreLocation.framework */,
+				DECD68AE1DC53F3800708E37 /* libsqlite3.tbd */,
+				DE2F680B1DC51CC90058FA35 /* MapKit.framework */,
+				5DF07AF119D770704CADC304 /* libPods-Sainet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE2F68041DC4F8910058FA35 /* Build configuration list for PBXNativeTarget "Sainet" */;
 			buildPhases = (
+				0179425B8541A7A14691AA52 /* Check Pods Manifest.lock */,
 				DE2F67E91DC4F88F0058FA35 /* Sources */,
 				DE2F67EA1DC4F88F0058FA35 /* Frameworks */,
 				DE2F67EB1DC4F88F0058FA35 /* Resources */,
+				DF8F359EFFA662A4AC34E4DA /* Embed Pods Frameworks */,
+				D558E19943B0D7451221E959 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -112,6 +208,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = S3J5A47ESW;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -146,14 +247,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0179425B8541A7A14691AA52 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D558E19943B0D7451221E959 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sainet/Pods-Sainet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF8F359EFFA662A4AC34E4DA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sainet/Pods-Sainet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE2F67E91DC4F88F0058FA35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DE2F67F81DC4F8910058FA35 /* ViewController.m in Sources */,
+				DE9A1E131DC677EB00B783A1 /* MenuViewController.m in Sources */,
+				DE2F680F1DC526260058FA35 /* Lugar.m in Sources */,
+				DE9A1E101DC6754800B783A1 /* SWRevealViewController.m in Sources */,
 				DE2F67F51DC4F8910058FA35 /* AppDelegate.m in Sources */,
+				DE9A1E251DC6FCF300B783A1 /* Usuario.m in Sources */,
+				DECD68AD1DC5376600708E37 /* ListTableViewCell.m in Sources */,
+				DE9A1E191DC6874100B783A1 /* LogInViewController.m in Sources */,
 				DE2F67F21DC4F8910058FA35 /* main.m in Sources */,
+				DE9A1E211DC6CFCC00B783A1 /* MBProgressHUD.m in Sources */,
+				DE2F68091DC51C330058FA35 /* MapViewController.m in Sources */,
+				DE9A1E1E1DC6CF9F00B783A1 /* Reachability.m in Sources */,
+				DE9A1E161DC679FA00B783A1 /* NewPlaceViewController.m in Sources */,
+				DE9A1E281DC7095000B783A1 /* ViewPlaceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +431,11 @@
 		};
 		DE2F68051DC4F8910058FA35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9386961E1AF8E965DD411914 /* Pods-Sainet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sainet/Sainet.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S3J5A47ESW;
 				INFOPLIST_FILE = Sainet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -283,8 +446,11 @@
 		};
 		DE2F68061DC4F8910058FA35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C23C2A8F2FD6D0BC2DFEB017 /* Pods-Sainet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sainet/Sainet.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S3J5A47ESW;
 				INFOPLIST_FILE = Sainet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -312,6 +478,7 @@
 				DE2F68061DC4F8910058FA35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
