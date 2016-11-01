@@ -9,6 +9,8 @@ target 'Sainet' do
     pod 'Bolts'
     pod 'FBSDKCoreKit'
     pod 'FBSDKLoginKit'
+    pod 'Fabric'
+    pod 'Crashlytics'
 
 end
 

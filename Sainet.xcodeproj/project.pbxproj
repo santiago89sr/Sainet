@@ -185,6 +185,7 @@
 				DE2F67EB1DC4F88F0058FA35 /* Resources */,
 				DF8F359EFFA662A4AC34E4DA /* Embed Pods Frameworks */,
 				D558E19943B0D7451221E959 /* Copy Pods Resources */,
+				DE978E311DC91A3C005B4A79 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -277,6 +278,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sainet/Pods-Sainet-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DE978E311DC91A3C005B4A79 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 68ca00ee411f944f77ff786772d9ce01f5b83c03 fc8e4580c54a8e241d47ee60c49489e1b89a6be63f186f682b9963fa4429f6c0";
 		};
 		DF8F359EFFA662A4AC34E4DA /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
