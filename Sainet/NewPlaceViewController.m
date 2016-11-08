@@ -34,6 +34,7 @@
     
     self.image.layer.cornerRadius = 82.0;
     self.image.layer.masksToBounds = YES;
+    
     self.image.userInteractionEnabled = YES;
     
     _nombreLugar.delegate = self;
@@ -97,6 +98,10 @@
         
         
     }]];
+    
+    UIPopoverPresentationController *popController = [actionSheet popoverPresentationController];
+    popController.sourceView = self.view;
+    popController.sourceRect = self.self.image.frame;
     
     // Present action sheet.
     [self presentViewController:actionSheet animated:YES completion:nil];

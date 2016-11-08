@@ -208,7 +208,7 @@
 					DE2F67EC1DC4F88F0058FA35 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = S3J5A47ESW;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -455,6 +455,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.santiago.Sainet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2e521236-aa4d-43d1-9a47-df4c8a24e917";
+				PROVISIONING_PROFILE_SPECIFIER = "Provisional Profile Development Sainet";
 			};
 			name = Debug;
 		};
@@ -470,6 +472,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.santiago.Sainet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2e521236-aa4d-43d1-9a47-df4c8a24e917";
+				PROVISIONING_PROFILE_SPECIFIER = "Provisional Profile Development Sainet";
 			};
 			name = Release;
 		};

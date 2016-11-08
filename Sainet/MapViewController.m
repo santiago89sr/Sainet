@@ -133,20 +133,40 @@
                     
                     Lugar *lugar = [[Lugar alloc]init];
                     
+                    NSDictionary *fieldsImage = [lug objectForKey:@"field_image"];
+                    NSDictionary *imageField = [fieldsImage objectForKey:@"file"];
+                    
                     [lugar setNombre:[lug objectForKey:@"title"]];
                     NSDictionary *fieldsLocation = [lug objectForKey:@"field_geofield"];
                     [lugar setLatitud:[fieldsLocation objectForKey:@"lat"]];
                     [lugar setLongitud:[fieldsLocation objectForKey:@"lon"]];
-                    [lugar setImagen:[lug objectForKey:@"url"]];
+                    
+                    [lugar setImagen:[imageField objectForKey:@"uri"]];
                     
                     [objetosLugares addObject:lugar];
                     
                 }
                 
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self.tablaLugares reloadData];
-                    [self agregarPins];
-                });
+                [self  cargarImagenes:^(NSError *error, BOOL success){
+                    
+                    if(success){
+                        NSLog(@"ENTRO SUCCESS DE CARGAR..");
+                        
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            
+                            [self agregarPins];
+                            
+                            [self.tablaLugares reloadData];
+                            
+                        });
+                        
+                    }else{
+                        NSLog(@"ERROR DE CARGAR.. %@",error);
+                    }
+                    
+                }];
+                
+                
                 
                 
                 
@@ -171,7 +191,60 @@
     
 }
 
--(void) agregarPins{
+-(void)cargarImagenes:(void (^)(NSError *error, BOOL success))callback{
+    
+    for (int i = 0; i<[objetosLugares count]; i++) {
+        
+        Lugar *lugarObj = [objetosLugares objectAtIndex:i];
+        
+        NSString *urlString = [NSString stringWithFormat:@"%@",[lugarObj imagen]];
+        
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+        [request setURL:[NSURL URLWithString:urlString]];
+        [request setHTTPMethod:@"GET"];
+        [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        
+        NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        [sessionConfiguration setHTTPAdditionalHeaders:@{@"Authorization":@"Basic cmVzdF9hcGk6MTIzNDU2Nzg5"}];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
+        
+        [[session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+            
+            NSMutableDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+            
+            if( error )
+            {
+                NSLog(@"%@", [error localizedDescription]);
+                
+            }else{
+                
+                callback(error,YES);
+                
+                [lugarObj setImagen:[responseDict objectForKey:@"url"]];
+                
+                NSLog(@"URL de la imagene: %@",[responseDict objectForKey:@"url"]);
+                //[objetosLugares addObject:lugarObjecto];
+                
+            }
+            
+            
+        }] resume];
+        
+        
+    }
+    
+    
+    
+
+    
+}
+
+-(void)agregarPins{
+    
+    NSLog(@"Agregar pins, numero de objetos: %lu.",(unsigned long)[objetosLugares count]);
+    
+    [self.mapView removeAnnotations:_mapView.annotations];
     
     for (int i=0; i<[objetosLugares count]; i++) {
         
